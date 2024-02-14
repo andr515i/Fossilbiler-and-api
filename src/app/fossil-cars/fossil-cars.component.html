@@ -1,0 +1,22 @@
+<form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="form-field">
+        <mat-label>Rank</mat-label>
+        <input matInput formControlName="rank" type="number" placeholder="Rank">
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Model</mat-label>
+        <input matInput formControlName="model" type="text" placeholder="Model">
+        @if (carForm.get('model')?.invalid) {
+            <mat-error>{{getErrorsMessage()}}</mat-error>
+        }
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Quantity</mat-label>
+        <input matInput formControlName="quantity" type="text" placeholder="Quantity">
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Change Quantity Percent</mat-label>
+        <input matInput formControlName="changeQuantityPercent" type="text" placeholder="Change Quantity Percent">
+    </mat-form-field> <br>
+    <button mat-raised-button color="primary" type="submit" [disabled]="carForm.invalid">Submit</button>
+</form>
