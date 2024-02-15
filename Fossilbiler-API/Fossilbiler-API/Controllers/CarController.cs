@@ -105,5 +105,33 @@ namespace Fossilbiler_API.Controllers
       }
 
     }
+
+
+
+    [HttpPut("EditCar/{index}")]
+    public IActionResult EditCar(int index, CarData newCar)
+    {
+      try
+      {
+
+        string json = System.IO.File.ReadAllText(filePath);
+        List<CarData> cars = JsonSerializer.Deserialize<List<CarData>>(json);
+
+        if (cars.Count != 0)
+        {
+          cars[index] = newCar;
+          System.IO.File.WriteAllText(filePath, JsonSerializer.Serialize(cars));
+          return Ok();
+        }
+        return BadRequest();
+
+
+      }
+      catch (Exception)
+      {
+
+        throw;
+      }
+    }
   }
 }

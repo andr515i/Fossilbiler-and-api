@@ -31,3 +31,4 @@ C:\Users\andr515i\Desktop\skole\H3\Angular\fossilbiler\Fossilbiler-API\Fossilbil
 C:\Users\andr515i\Desktop\skole\H3\Angular\fossilbiler\Fossilbiler-API\Fossilbiler-API\obj\Debug\net8.0\Fossilbiler-API.pdb
 C:\Users\andr515i\Desktop\skole\H3\Angular\fossilbiler\Fossilbiler-API\Fossilbiler-API\obj\Debug\net8.0\Fossilbiler-API.genruntimeconfig.cache
 C:\Users\andr515i\Desktop\skole\H3\Angular\fossilbiler\Fossilbiler-API\Fossilbiler-API\obj\Debug\net8.0\ref\Fossilbiler-API.dll
+C:\Users\andr515i\Desktop\skole\H3\Angular\fossilbiler\Fossilbiler-API\Fossilbiler-API\obj\Debug\net8.0\Fossilbiler-API.sourcelink.json

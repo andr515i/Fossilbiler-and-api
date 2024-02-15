@@ -24,10 +24,7 @@ export class FossilCarsComponent {
       changeQuantityPercent: [null, [Validators.required]]
     })
   }
-  // rank: number | null = null;
-  // quantity: number | string | null = null;
-  // model: string | null = null;
-  // changeQuantityPercent: number | string | null = null;
+
 
 
   onSubmit() {
@@ -44,9 +41,6 @@ export class FossilCarsComponent {
         quantity: null,
         changeQuantityPercent: null
       });
-
-      
-      
     }
     else {
       alert("form is invalid");

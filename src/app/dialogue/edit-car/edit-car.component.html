@@ -1,1 +1,21 @@
-<p>edit-car works!</p>
+<form [formGroup]="carForm" (ngSubmit)="editCar()">
+    <mat-form-field class="form-field">
+        <mat-label>Rank</mat-label>
+        <input matInput formControlName="rank" type="number" placeholder="Rank">
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Model</mat-label>
+        <input matInput formControlName="model" type="text" placeholder="Model">
+        <mat-error *ngIf="carForm.get('model')?.invalid">{{ getErrorsMessage() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Quantity</mat-label>
+        <input matInput formControlName="quantity" type="number" placeholder="Quantity">
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Change Quantity Percent</mat-label>
+        <input matInput formControlName="changeQuantityPercent" type="number" placeholder="Change Quantity Percent">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit" [disabled]="carForm.invalid">Submit</button>
+</form>

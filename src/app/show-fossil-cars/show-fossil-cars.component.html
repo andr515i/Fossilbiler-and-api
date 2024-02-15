@@ -1,6 +1,6 @@
-<table mat-table [dataSource]="dataService.carDataSource">
+<table mat-table [dataSource]="dataService.carDataSource" matSort >
     <ng-container matColumnDef="rank">
-        <th mat-header-cell *matHeaderCellDef>rank</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">rank</th>
         <td mat-cell *matCellDef="let row">{{ row.rank }}</td>
     </ng-container>
     <ng-container matColumnDef="model">
