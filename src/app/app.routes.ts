@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { AdminCarsComponent } from './admin-cars/admin-cars.component';
+import { AdminCarsComponent } from './admin-car-site/admin-cars.component';
 import { NotloggedinComponent } from './notloggedin/notloggedin.component';
 import { adminGuard } from './guards/auth-login.guard';
 import { IsLoggedInComponent } from './is-logged-in/is-logged-in.component';

@@ -10,8 +10,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-fossil-cars',
   standalone: true,
   imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, CommonModule],
-  templateUrl: './fossil-cars.component.html',
-  styleUrl: './fossil-cars.component.css'
+  templateUrl: './fossil-cars-create-form.component.html',
+  styleUrl: './fossil-cars-create-form.component.css'
 })
 export class FossilCarsComponent {
   carForm: FormGroup;

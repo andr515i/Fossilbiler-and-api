@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FossilCarsComponent } from './fossil-cars.component';
+import { FossilCarsComponent } from './fossil-cars-create-form.component';
 
 describe('FossilCarsComponent', () => {
   let component: FossilCarsComponent;

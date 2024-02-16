@@ -4,7 +4,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { ShowFossilCarsComponent } from './show-fossil-cars/show-fossil-cars.component';
+import { ShowFossilCarsComponent } from './fossil-cars-table/show-fossil-cars.component';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), provideHttpClient(), provideAnimationsAsync()]

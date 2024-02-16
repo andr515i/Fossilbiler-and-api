@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FossilCarsComponent } from "../fossil-cars/fossil-cars.component";
-import { ShowFossilCarsComponent } from "../show-fossil-cars/show-fossil-cars.component";
+import { FossilCarsComponent } from "../fossil-cars-create-form/fossil-cars-create-form.component";
+import { ShowFossilCarsComponent } from "../fossil-cars-table/show-fossil-cars.component";
 
 @Component({
     selector: 'app-is-logged-in',
