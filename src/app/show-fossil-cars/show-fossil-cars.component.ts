@@ -2,12 +2,11 @@ import { DataServiceService } from '../service/data-service.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule, NgFor, NgStyle } from '@angular/common';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { MatIcon, MatIconModule } from '@angular/material/icon'
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon'
 import { ICarData } from '../interface/icar-data';
 import { MatDialog } from '@angular/material/dialog';
 import { EditCarComponent } from '../dialogue/edit-car/edit-car.component';
-import { LiveAnnouncer } from '@angular/cdk/a11y';
 import { MatSort, MatSortModule, Sort } from '@angular/material/sort';
 
 @Component({
@@ -32,21 +31,13 @@ export class ShowFossilCarsComponent implements OnInit {
     this.dataService.updateGUI();
   }
 
-  getCarData() {
-    this.dataService.getCarData().subscribe((data: ICarData[]) => {
-      this.dataService.carDataSource.data = data;
-    });
-  }
+
 
   deleteCar(index: number) {
     this.dataService.deleteCar(index).subscribe(() => {
-      this.getCarData();
+      this.dataService.updateGUI();
     });
   }
-
-  index: number | null = null;
-
-  carEditData: ICarData | null = null;
 
   editCarDialog(carData: ICarData, currentIndex: number) {
     console.log(`${carData.rank} and ${carData.model} `);

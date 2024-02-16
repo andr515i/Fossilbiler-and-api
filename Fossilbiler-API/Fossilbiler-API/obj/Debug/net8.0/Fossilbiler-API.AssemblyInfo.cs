@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fossilbiler-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9756f680686e6eb910095816b6bc3a46cc89a9b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb6f25c24e8b68f1a25cf3c4cda30c74868f0351")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fossilbiler-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fossilbiler-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
